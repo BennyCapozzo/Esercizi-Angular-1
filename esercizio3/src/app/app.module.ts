@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { UserListComponent } from './project/user-list/user-list.component';
+import { UserSingleComponent } from './project/user-single/user-single.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
+    UserSingleComponent
   ],
   imports: [
     BrowserModule

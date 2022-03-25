@@ -1,0 +1,12 @@
+<div [ngStyle]="{'display':'flex','align-items':'center'}">
+  <img
+    src="{{ user.profilePhotoUrl }}"
+    alt="gattino"
+    [style.width.px]="'100'"
+  />
+  <p>
+    <b> {{ user.name }} {{ user.surname }} </b>
+  </p>
+  <p>{{ user.age }}</p>
+  <p>{{ user.address.city }}</p>
+</div>

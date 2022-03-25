@@ -1,8 +1,4 @@
-<div class="utente" *ngFor="let user of users; let i=index" [ngStyle]="{'display':'flex','align-items':'center'}">
+<div *ngFor="let user of users; let i=index" [ngStyle]="{'display':'flex','align-items':'center'}">
     <p>{{1+i}}.</p>
-    <img src="{{user.profilePhotoUrl}}" alt="gattino" [style.width.px]="'100'">
-    <p><b> {{user.name}} {{user.surname}} </b></p>
-    <p>{{user.age}}</p>
-    <p>{{user.address.city}}</p>
-
+    <app-user-single [user]="user"></app-user-single>
 </div>
