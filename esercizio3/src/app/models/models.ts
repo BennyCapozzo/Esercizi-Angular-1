@@ -17,16 +17,6 @@ interface Address {
   postalCode: string;
 }
 
-interface Companies {
-  id: number;
-  name: string;
-  description: string;
-  location: {
-    city: string;
-    street: string;
-    postalCode: string;
-  };
-}
 
 export enum Gender {
   FEMALE = 'female',

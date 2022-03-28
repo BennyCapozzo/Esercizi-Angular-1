@@ -1,4 +1,13 @@
-<div [ngStyle]="{'display':'flex','align-items':'center'}" *ngIf="user">
+<div
+  class="container"
+  [ngStyle]="{ display: 'flex', 'align-items': 'center' }"
+  *ngIf="user"
+  [ngClass]="{
+    'border-staff': user.role == 'staff',
+    'border-manager': user.role == 'manager',
+    'border-admin': user.role == 'admin'
+  }"
+>
   <img
     src="{{ user.profilePhotoUrl }}"
     alt="gattino"
