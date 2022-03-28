@@ -1,4 +1,4 @@
 <div *ngFor="let user of users; let i=index" [ngStyle]="{'display':'flex','align-items':'center'}">
     <p>{{1+i}}.</p>
-    <app-user-single [user]="user"></app-user-single>
+    <app-user-single [user]="user" (submitted)="deleteItem($event)"></app-user-single>
 </div>

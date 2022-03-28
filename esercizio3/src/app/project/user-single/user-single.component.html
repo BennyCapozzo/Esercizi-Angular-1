@@ -1,4 +1,4 @@
-<div [ngStyle]="{'display':'flex','align-items':'center'}">
+<div [ngStyle]="{'display':'flex','align-items':'center'}" *ngIf="user">
   <img
     src="{{ user.profilePhotoUrl }}"
     alt="gattino"
@@ -9,4 +9,5 @@
   </p>
   <p>{{ user.age }}</p>
   <p>{{ user.address.city }}</p>
+  <button (click)="send(user)">Remove Item</button>
 </div>
